@@ -7,7 +7,19 @@
 
 	
 	
+	<!-- MariaDB Connection Pool -->
+   <bean id="dataSource"
+      class="org.springframework.jdbc.datasource.SimpleDriverDataSource">
+      
+      <property name="driverClass" value="org.mariadb.jdbc.Driver" />
+      
+      <property name="url" value="jdbc:mariadb:// :3306/myDB"></property>
 
+      <property name="username" value="" />
+      
+      <property name="password" value="" />
+   </bean>
+	
     
 </beans>
 
