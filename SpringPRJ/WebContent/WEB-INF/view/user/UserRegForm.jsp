@@ -40,42 +40,36 @@
 
 <h1>회원가입화면</h1>
 <form name="f" method="post" action="/user/insertUserInfo.do" onsubmit="return doRegUserCheck(this);">
- <div class="signup-content">
-                    <form method="POST" id="signup-form" class="signup-form">
-                        <h2 class="form-title">회원가입</h2>
-                        
-						<div class="form-group">
-                            <input type="email" class="form-input" name="email"  placeholder="Email"/>
-                        </div>
-                           
-                        <div class="form-group">
-                            <input type="password" class="form-input" name="password" placeholder="비밀번호"/>
-                            <span toggle="#password" class="zmdi zmdi-eye field-icon toggle-password"></span>
-                        </div>
-                        
-                       
-                           
-                        <div class="form-group">
-                           <input type="password" class="form-input" name="password2" placeholder="비밀번호 확인"/>
-                             <span toggle="#password" class="zmdi zmdi-eye field-icon toggle-password"></span>
-                        </div>
-                        
-                         
-                        <div class="form-group">
-                            <input type="text" class="form-input" name="user_name" placeholder="사용할 이름"/>
-                        </div>
-                         
 
-                           
-                        <div class="form-group">
-                            <input type="submit" name="submit" class="form-submit" value="가입하기"/>
-                            
-                            
-                            
-                        </div>
-                    </form>
-                    
-                </div>
+<table border="1">
+
+<col width="150px">
+<col width="150px">
+<col width="150px">
+<col width="150px">
+<tr>
+	<td>아이디</td>
+	<td><input type="text" name="email" style="width:150px"/></td>
+</tr>
+
+<tr>
+	<td>비밀번호</td>
+	<td><input type=password" name="password" style="width:150px"/></td>
+</tr>
+<tr>
+	<td>비밀번호 확인</td>
+	<td><input type=password2" name="password2" style="width:150px"/></td>
+</tr>
+
+<tr>
+	<td>사용할 이름</td>
+	<td><input type="text" name="user_name" style="width:150px"/></td>
+</tr>
+
+</table>
+<input type="submit" value="회원가입" />
+</form>
+
 
 </body>
 </html>
